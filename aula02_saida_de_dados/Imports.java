@@ -22,6 +22,7 @@ import java.util.Locale;
             // A forma de concatenar usando o printf é bem diferente, pois estamos usando uma concatenção via o conectivo vírgula 
             // Além disso, perceba que eu tenho que formatar a variável dentro da minha "String" referente a mensagem, logo, precisa se atentar a isso
             System.out.printf("Veja que temos uma diferença entre as duas saídas a cima, portanto, para a região US, temos: %.2f double em US%n ", y);
+
             
             
 
