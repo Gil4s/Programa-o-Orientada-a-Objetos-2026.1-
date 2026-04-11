@@ -17,10 +17,19 @@ public class questao_6{
 
         System.out.println("Digite o valor em minutos teste: (para responder a questão, digite: 9257 minutos) "); 
         minutos = scanner.nextInt();
+        
 
-        int horas_minutadas = (minutos/60);
+        // basta eu dividir as o total por 60 e eu tenho a quantidade seca de horas
+        // problema 1: Para a questão de Lucas, eu vou ter muitas horas finais resultantes.
+        // Como resolver? 
+        // Eu poderia trabalhar com o resto da divisão das horas totais por 24 
+        int horas_minutadas = (minutos/60); // método complexo
+        // int horas_fianais = (horas_minutadas%24); // método mais prático
+        
         int dias = horas_minutadas/24;
 
+
+        // Resolvendo o problema das horas com o método complexo adotado
         int i = 0; while(horas_minutadas >= 24) {
             System.out.printf("calculando suas horas %d vezes", i);
             
