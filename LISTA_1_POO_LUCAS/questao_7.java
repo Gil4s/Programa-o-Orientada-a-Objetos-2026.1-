@@ -3,50 +3,55 @@ import java.util.Scanner;
 
 public class questao_7{
 
-    public static void main (String [] args) {
+    public static void main(String[] args) {
 
-        double number_1;
-        double number_2;
-        double number_3;
-        
-    Scanner scanner = new Scanner(System.in);
+        double n1, n2, n3;
+        Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Digite o valor do primeiro número:"); 
-    number_1 = scanner.nextDouble();
+        System.out.println("Digite o valor do primeiro número:");
+        n1 = scanner.nextDouble();
 
-    System.out.println("Digite o valor do segundo número:");
-    number_2 = scanner.nextDouble();
+        System.out.println("Digite o valor do segundo número:");
+        n2 = scanner.nextDouble();
 
-    System.out.println("Digite o valor do terceiro número:");
-    number_3 = scanner.nextDouble();
+        System.out.println("Digite o valor do terceiro número:");
+        n3 = scanner.nextDouble();
 
-    double maior, meio, menor;
-    if (number_1 > number_2 && number_1 > number_3) {
-        maior = number_1;
-    } else if (number_2 > number_1 && number_2 > number_3){ 
-        maior = number_2;       
-    } else{
-        maior = number_3;
-    }
+        double maior, meio, menor;
 
-    if (maior > number_1 && (number_1 > number_2 || number_1 > number_3)) {
-        meio = number_1;
-    } else if (maior > number_2 && (number_2 > number_1 || number_2 > number_3)){
-        meio = number_2;
-    } else {
-        meio = number_3;
-    } 
-    
-    if (number_1 < meio){
-        menor = number_1;
-    } else if (number_2 < meio) {
-        menor = number_2;
-    } else {
-        menor = number_3;
-    }
-    scanner.close();
-    
-    System.out.printf("O Valor em ordem dos seus números é;%n Maior: %.2f%n Meio: %.2f%n Menor: %.2f%n" , maior, meio, menor);
+        // Lógica de Comparação
+        if (n1 >= n2 && n1 >= n3) {
+            maior = n1;
+            if (n2 >= n3) {
+                meio = n2;
+                menor = n3;
+            } else {
+                meio = n3;
+                menor = n2;
+            }
+        } else if (n2 >= n1 && n2 >= n3) {
+            maior = n2;
+            if (n1 >= n3) {
+                meio = n1;
+                menor = n3;
+            } else {
+                meio = n3;
+                menor = n1;
+            }
+        } else {
+            maior = n3;
+            if (n1 >= n2) {
+                meio = n1;
+                menor = n2;
+            } else {
+                meio = n2;
+                menor = n1;
+            }
+        }
 
+        scanner.close();
+
+        System.out.printf("O Valor em ordem dos seus números é:%n");
+        System.out.printf("Maior: %.2f%nMeio:  %.2f%nMenor: %.2f%n", maior, meio, menor);
     }
 }
