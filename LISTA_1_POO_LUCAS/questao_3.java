@@ -14,13 +14,15 @@ public class questao_3 {
 
         angulo = entrada.nextDouble();
 
-        angulo_radianos = angulo * (pi/180);
+        angulo_radianos = angulo * (3.14/180);
 
         cosseno = Math.cos(angulo_radianos);
 
         seno = Math.sin(angulo_radianos);
 
         tangente = Math.tan(angulo_radianos);
+
+        // criar condicional para não calcular a tangente
 
         System.out.printf("Cosseno: %.2f , Seno: %.2f , Tangente: %.2f ", seno, cosseno, tangente); 
 

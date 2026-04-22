@@ -1,5 +1,6 @@
 package aula08_atributos;
 
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -15,7 +16,7 @@ public class programa_com_classe {
         // forma antiga que estávamos usando para o triangulo sem importação de classes no programa
         // double xA, xB, xC, yA, yB, yC;
 
-        x = new triangulo(a,b,c);
+        x = new triangulo();
         y = new triangulo();
 
 
