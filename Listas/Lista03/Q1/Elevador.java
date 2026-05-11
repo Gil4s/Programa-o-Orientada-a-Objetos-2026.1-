@@ -16,7 +16,7 @@ Escreva um aplicativo de teste que demonstre as capacidades da classe criada, ou
 execute todos os métodos da classe.  */
 
 public class Elevador {
-    private int andarAtual;
+    private  int andarAtual;
     private int totalAndares;
     private int capacidade;
     private int pessoasPresentes;

@@ -2,7 +2,7 @@
 
 public class DemoLampada {
     public static void main(String[] args) {
-        Lampada lampada1 = new Lampada();
+        Lampada lampada1 = new Lampada(); // criando um objeto 
 
         lampada1.acende();
         lampada1.apaga();

@@ -31,4 +31,5 @@ public class RegistroAcademico {
         System.out.println("Mensalidade: " + calculaMensalidade());
         System.out.println();
     }
+
 }
