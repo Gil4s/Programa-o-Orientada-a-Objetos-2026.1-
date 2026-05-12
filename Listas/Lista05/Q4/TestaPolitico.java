@@ -1,3 +1,16 @@
+/*
+ * Questao 4
+ * Crie uma classe Pessoa com ao menos 2 atributos a sua escolha. Escreva a
+ * classe Politico que herda da classe Pessoa e tem um campo adicional para
+ * representar o partido do politico. Escreva tambem as classes Prefeito e
+ * Governador que herdam da classe Politico e que contem um campo para
+ * representar a cidade ou estado governado. Todos os atributos devem ser
+ * privados. Cada classe deve ter um construtor e um metodo toString. Lembre-se
+ * que cada metodo toString deve representar todos os atributos, inclusive os
+ * herdados. Escreva tambem uma aplicacao que demonstre o uso de instancias
+ * destas classes.
+ */
+
 public class TestaPolitico {
     public static void main(String[] args) {
 

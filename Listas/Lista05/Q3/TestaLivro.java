@@ -1,3 +1,11 @@
+/*
+ * Questao 3
+ * Escreva as classes LivroLivraria e LivroBiblioteca que herdam da classe Livro.
+ * Quais as diferencas entre as duas classes e que campos elas tem em comum?
+ * Defina os atributos de cada classe e escreva um aplicativo de teste que
+ * demonstre o uso das classes criadas.
+ */
+
 public class TestaLivro {
     public static void main(String[] args) {
 

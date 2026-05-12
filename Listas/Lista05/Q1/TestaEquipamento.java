@@ -1,3 +1,15 @@
+/*
+ * Questao 1
+ * Crie as classes Equipamento e Computador, cada uma com dois atributos privados
+ * a sua escolha. Alem disso, a classe Computador devera herdar os metodos e
+ * atributos da classe Equipamento. Escreva metodos de acesso, gets e sets, para
+ * os atributos definidos em ambas as classes. Cada classe tambem deve ter um
+ * metodo toString. Lembre-se que o metodo toString de Computador tambem deve
+ * representar os atributos herdados. Por fim, crie uma classe executavel,
+ * TestaEquipamento, para instanciar um objeto de cada classe, inicializar seus
+ * atributos e imprimi-los.
+ */
+
 public class TestaEquipamento {
     public static void main(String[] args) {
 
